@@ -20,19 +20,10 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: requisitos
     attributes:
       label: Requisitos
-      description: ¿Qué condiciones previas o dependencias existen para llevar a cabo esta tarea?
-      placeholder: Tener configurado el entorno de desarrollo con Maven y JUnit
-    validations:
-      required: true
-
-  - type: textarea
-    id: detalles
-    attributes:
-      label: Detalles de implementación
       description: Explicá brevemente los pasos o componentes involucrados.
       placeholder: |
         - Crear clase 
@@ -42,16 +33,19 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: criterios
     attributes:
       label: Criterios de Aceptación
-      description: ¿Qué debe cumplirse para considerar que la tarea está completa?
+      description: Explicá brevemente los pasos o componentes involucrados.
       placeholder: |
-        - La clase Vehiculo debe tener los atributos adecuados.
-        - Se debe probar que los métodos funcionan correctamente.
+        - Crear clase 
+        - Agregar constructor con parámetros
+        - Implementar getters y setters
+        - Probar desde clase Main
     validations:
       required: true
+
 
   - type: dropdown
     id: milestone
