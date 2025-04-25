@@ -76,4 +76,3 @@ body:
         - label: Se probó la funcionalidad en `Main` o test correspondiente
         - label: Se creó una rama específica para esta tarea
         - label: Se abrió un Pull Request que menciona este Issue
-
