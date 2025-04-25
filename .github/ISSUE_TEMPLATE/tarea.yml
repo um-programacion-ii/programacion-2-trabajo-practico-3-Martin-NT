@@ -20,6 +20,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: requisitos
+    attributes:
+      label: Requisitos
+      description: ¿Qué condiciones previas o dependencias existen para llevar a cabo esta tarea?
+      placeholder: Tener configurado el entorno de desarrollo con Maven y JUnit
+    validations:
+      required: true
+
   - type: textarea
     id: detalles
     attributes:
@@ -30,6 +39,17 @@ body:
         - Agregar constructor con parámetros
         - Implementar getters y setters
         - Probar desde clase Main
+    validations:
+      required: true
+
+  - type: input
+    id: criterios
+    attributes:
+      label: Criterios de Aceptación
+      description: ¿Qué debe cumplirse para considerar que la tarea está completa?
+      placeholder: |
+        - La clase Vehiculo debe tener los atributos adecuados.
+        - Se debe probar que los métodos funcionan correctamente.
     validations:
       required: true
 
