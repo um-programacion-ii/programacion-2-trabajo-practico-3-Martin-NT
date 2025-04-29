@@ -28,7 +28,7 @@ Models
 Enums
 - Estado: Contiene los estados del Libro (DISPONIBLE-PRESTADO)
 
-# ✅ Tests - Pruebas
+## ✅ Tests - Pruebas
 
 - LibroTest
     - Verifica que se puede crear un libro válido con sus datos correctamente asignados.
@@ -56,7 +56,7 @@ Enums
     - Verifica que se lanza una excepción si el usuario no existe al registrar un préstamo.
     - Verifica que se lanza una excepción si el libro no está disponible para préstamo.
 
-# 📘 Documentación de los cambios realizados
+## 📘 Documentación de los cambios realizados
 - Etapa 1 - Configuración Inicial y Pruebas Básicas
     - Se agregaron los templates de Issues y Pull Request
     - Atributos: isbn , titulo, autor y estado.
@@ -83,7 +83,7 @@ Enums
     - Método para registrar préstamos para un usuario, actualizando su historial en GestionUsuarios.
     - Se usa lombok
 
-# 💻 Evidencia de que las pruebas pasan correctamente
+## 💻 Evidencia de que las pruebas pasan correctamente
 - LibroTest
 /home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/libro_test.png
 - CatalogoTest
@@ -93,7 +93,7 @@ Enums
 - UsuarioTest
 /home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/usuario_test.png
 
-# 🤖 Uso de IA
+## 🤖 Uso de IA
 Se uso Inteligencia artificial para fijar conceptos y aprender:
 
 - Hacer bien el archivo pom.xml con las propiedades y dependencias necesarias.
