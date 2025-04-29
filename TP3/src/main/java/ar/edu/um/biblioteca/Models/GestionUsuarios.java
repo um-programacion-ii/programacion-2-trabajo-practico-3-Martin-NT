@@ -13,8 +13,7 @@ public class GestionUsuarios {
     }
 
     public void agregarUsuario(Usuario usuario) {
-        Usuario nuevoUsuario = new Usuario(usuario.getNombre(), usuario.getApellido());
-        usuarios.add(nuevoUsuario);
+        usuarios.add(usuario);
     }
 
     public Usuario buscarUsuarioPorNombreCompleto(String nombre, String apellido) {
@@ -24,10 +23,12 @@ public class GestionUsuarios {
                 .orElse(null);
     }
 
-    public void registrarPrestamos(String nombre, String apellido, String isbn) {
+    public void registrarPrestamo(String nombre, String apellido, String isbn) {
         Usuario usuario = buscarUsuarioPorNombreCompleto(nombre, apellido);
+        if (usuario == null) {
+            throw new IllegalArgumentException("Usuario no encontrado");
+        }
         Prestamo prestamo = sistemaPrestamos.prestarLibro(isbn);
-        // Lo agrega al historial del usuario
         usuario.getHistorialPrestamos().add(prestamo);
 
     }
