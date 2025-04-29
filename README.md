@@ -85,8 +85,11 @@ Enums
 
 ## 💻 Evidencia de que las pruebas pasan correctamente
 ![Pantalla principal](assets/libro_test.png)
+
 ![Pantalla principal](assets/catalogo_test.png)
+
 ![Pantalla principal](assets/prestamo_test.png)
+
 ![Pantalla principal](assets/usuario_test.png)
 
 ## 🤖 Uso de IA
