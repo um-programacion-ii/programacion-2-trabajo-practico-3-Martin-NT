@@ -84,13 +84,18 @@ Enums
     - Se usa lombok
 
 ## 💻 Evidencia de que las pruebas pasan correctamente
-![Pantalla principal](assets/libro_test.png)
 
-![Pantalla principal](assets/catalogo_test.png)
+### 📘 LibroTest
+![Pruebas de Libro](assets/libro_test.png)
 
-![Pantalla principal](assets/prestamo_test.png)
+### 📚 CatalogoTest
+![Pruebas de Catálogo](assets/catalogo_test.png)
 
-![Pantalla principal](assets/usuario_test.png)
+### 🔄 PrestamoTest
+![Pruebas de Préstamo](assets/prestamo_test.png)
+
+### 👤 UsuarioTest
+![Pruebas de Usuario](assets/usuario_test.png)
 
 ## 🤖 Uso de IA
 Se uso Inteligencia artificial para fijar conceptos y aprender:
