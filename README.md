@@ -84,14 +84,10 @@ Enums
     - Se usa lombok
 
 ## 💻 Evidencia de que las pruebas pasan correctamente
-- LibroTest
-/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/libro_test.png
-- CatalogoTest
-/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/catalogo_test.png
-- PrestamoTest
-/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/prestamo_test.png
-- UsuarioTest
-/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/usuario_test.png
+![Pantalla principal](assets/libro_test.png)
+![Pantalla principal](assets/catalogo_test.png)
+![Pantalla principal](assets/prestamo_test.png)
+![Pantalla principal](assets/usuario_test.png)
 
 ## 🤖 Uso de IA
 Se uso Inteligencia artificial para fijar conceptos y aprender:
