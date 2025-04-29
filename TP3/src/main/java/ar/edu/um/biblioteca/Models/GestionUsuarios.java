@@ -31,5 +31,4 @@ public class GestionUsuarios {
         usuario.getHistorialPrestamos().add(prestamo);
 
     }
-
 }
