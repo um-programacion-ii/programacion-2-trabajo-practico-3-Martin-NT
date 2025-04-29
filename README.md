@@ -15,6 +15,91 @@
 - **Apellido:** Navarro Teixidor
 - **Legajo:** 62181
 
+# 📘 Documentación del Sistema
+## 📚 Clases / Componentes
+Models
+- Libro: Representa un libro dentro del sistema. 
+- Catalogo: Gestiona el listado de libros disponibles en la biblioteca.
+- Prestamo: Representa el acto de préstamo de un libro.
+- SistemaPrestamos: Se encarga de la lógica de préstamos.
+- Usuario: Representa a una persona que utiliza la biblioteca.
+- Gestionusuarios: Administra los usuarios registrados y sus préstamos. 
+
+Enums
+- Estado: Contiene los estados del Libro (DISPONIBLE-PRESTADO)
+
+# ✅ Tests - Pruebas
+
+- LibroTest
+    - Verifica que se puede crear un libro válido con sus datos correctamente asignados.
+    - Verifica que se puede cambiar el estado del libro (por ejemplo, de DISPONIBLE a PRESTADO).
+    
+- CatalogoTest
+    - Verifica que un libro existente se puede buscar por ISBN correctamente.
+    - Verifica que buscar un libro con un ISBN inexistente devuelve null.
+    - Verifica que se obtengan todos los libros disponibles
+    - Verifica que se pueden obtener todos los libros que están en estado PRESTADO.
+    - Verifica que el catálogo retorna correctamente todos los libros agregados.
+    - Verifica que se puede agregar un libro al catálogo y queda registrado.
+
+- PrestamoTest
+    - Verifica que un libro disponible se puede prestar y su estado cambia a PRESTADO.
+    - Verifica que un libro prestado se puede devolver y su estado vuelve a DISPONIBLE.
+    - Verifica que no se puede devolver un libro que no fue prestado (estado inválido).
+    - Verifica que no se puede devolver un libro inexistente (no está en el catálogo).
+    - Verifica que no se puede devolver un libro que ya fue devuelto.
+    - Verifica que no se puede prestar un libro que ya está prestado.
+    - Verifica que no se puede prestar un libro que no existe en el catálogo.
+    
+- UsuarioTest
+    - Verifica que un préstamo se registra correctamente y se actualiza el historial del usuario.
+    - Verifica que se lanza una excepción si el usuario no existe al registrar un préstamo.
+    - Verifica que se lanza una excepción si el libro no está disponible para préstamo.
+
+# 📘 Documentación de los cambios realizados
+- Etapa 1 - Configuración Inicial y Pruebas Básicas
+    - Se agregaron los templates de Issues y Pull Request
+    - Atributos: isbn , titulo, autor y estado.
+    - Enum estado con DISPONIBLE Y PRESTADO
+    - Se inicializa en el estado DISPONIBLE.
+    - Se usa lombok
+    
+- Etapa 2 - Implementación del Catálogo
+    - Método para agregar libros al catálogo.
+    - Método para buscar libros por ISBN.
+    - Método para obtener todos los libros, los disponibles y los prestados.
+    - Se usa lombok
+    
+- Etapa 3 - Sistema de Préstamos
+    - Atributos: fechaPrestamo y libroPrestado en clase Prestamo.
+    - Método para prestar un libro si está disponible en SistemaPrestamos.
+    - Método para devolver un libro si está prestado en SistemaPrestamos.
+    - Se usa lombok
+    
+- Etapa 4 - Sistema de Usuarios
+    - Atributos: nombre, apellido, historialPrestamos en clase Usuario
+    - Método para registrar nuevos usuarios en GestionUsuarios.
+    - Método para buscar usuarios por nombre y apellido en GestionUsuarios.
+    - Método para registrar préstamos para un usuario, actualizando su historial en GestionUsuarios.
+    - Se usa lombok
+
+# 💻 Evidencia de que las pruebas pasan correctamente
+- LibroTest
+/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/libro_test.png
+- CatalogoTest
+/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/catalogo_test.png
+- PrestamoTest
+/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/prestamo_test.png
+- UsuarioTest
+/home/martin/Documentos/Programacion2/programacion-2-trabajo-practico-3-Martin-NT/assets/usuario_test.png
+
+# 🤖 Uso de IA
+Se uso Inteligencia artificial para fijar conceptos y aprender:
+
+- Hacer bien el archivo pom.xml con las propiedades y dependencias necesarias.
+- Ver como era aplicable el uso de mock.
+- Uso de assertThrows en tests
+
 ## Importante
 - La rama `main` está protegida y no se pueden hacer commits directos sobre ella
 - Todo el trabajo debe realizarse en ramas feature siguiendo el patrón `feature/issue-numero-descripcion`
